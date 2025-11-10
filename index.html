@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nithish K S | Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+    <!-- Navbar-->
+<nav>
+    <div class="logo">Nithish K S</div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- LinkedIn Link -->
+        <li><a href="https://www.linkedin.com/in/nithish-ks9" target="_blank">LinkedIn</a></li>
+    </ul>
+    <button id="theme-toggle">Toggle</button>
+</nav>
+
+
+    <!-- Hero Section -->
+<section class="hero" id="home">
+    <div class="hero-content">
+        <h1 class="fade-in">Hi, I'm <span class="highlight">Nithish K S</span></h1>
+        <p class="hero-subtitle fade-in typewriter">
+            Turning ideas into 
+            <span style="color:#d9822b; font-weight:700;">stunning websites</span>, 
+            desktop apps, and 
+            <span style="color:#d9822b; font-weight:700;">data visualizations</span> 
+            with modern design and creativity.
+        </p>
+        <div class="hero-cta">
+            <button class="cta-button" onclick="scrollToContact()">Get in Touch</button>
+        </div>
+    </div>
+</section>
+<br><br>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container fade-in">
+            <div class="skill-card">
+                <h3>Web Development</h3>
+                <p>HTML, CSS, JavaScript, PHP, ASP.NET</p>
+            </div>
+            <div class="skill-card">
+                <h3>Programming & Data</h3>
+                <p>Python, Pandas, NumPy</p>
+            </div>
+            <div class="skill-card">
+                <h3>Databases</h3>
+                <p>MySQL, PostgreSQL</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Visualization</h3>
+                <p>Power BI, Matplotlib, Excel</p>
+            </div>
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <p>Problem-solving, Creativity, Adaptability</p>
+            </div>
+        </div>
+    </section>
+<br><br>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-container fade-in">
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">Online Voting System</div>
+                    <div class="project-overlay">
+                        <p>Web app with login, vote casting, and result storage using HTML, CSS, JS, and MySQL.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">Player's Spot</div>
+                    <div class="project-overlay">
+                        <p>ASP.NET & MySQL platform connecting coaches and players with secure login.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">Shoe Store</div>
+                    <div class="project-overlay">
+                        <p>Responsive e-commerce website with product listings and database management using PHP & MySQL.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">Calculator</div>
+                    <div class="project-overlay">
+                        <p>Web app for performing basic arithmetic operations using HTML, CSS, and JS.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">To-Do List App</div>
+                    <div class="project-overlay">
+                        <p>Desktop app for task management using Python Tkinter.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">Student Marks Analysis</div>
+                    <div class="project-overlay">
+                        <p>Analyzed and visualized student performance using Python Pandas and Matplotlib.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="project-card">
+                <div class="project-inner">
+                    <div class="project-front">Sales Dashboard</div>
+                    <div class="project-overlay">
+                        <p>Designed Power BI dashboard to visualize sales trends and profit insights.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<br><br>
+    <!-- Contact Section -->
+    <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+        <p>Have a project or want to collaborate? Send me a message directly!</p>
+        <form id="contact-form">
+            <input type="text" name="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" placeholder="Your Email" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Email</button>
+        </form>
+    </div>
+</section>
+
+
+    <footer>
+        &copy; 2025 | Designed & Developed by K.S. Nithish
+    </footer>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("okEf1rSz323Q2Fu78"); // replace with your User ID
+    })();
+    </script>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

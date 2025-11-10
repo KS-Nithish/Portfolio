@@ -1,0 +1,48 @@
+/* ===== Fade-In Animation ===== */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ===== Typewriter Effect for Hero ===== */
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid rgba(255,255,255,0.8);
+    white-space: nowrap;
+    animation: typing 3s steps(30, end), blink-caret 0.7s step-end infinite;
+    font-weight: 500;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+@keyframes blink-caret {
+    0%, 100% { border-color: transparent; }
+    50% { border-color: rgba(255,255,255,0.8); }
+}
+
+/* ===== Project Overlay Animation ===== */
+.project-overlay {
+    transition: bottom 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+}
+.project-card:hover .project-overlay {
+    opacity: 1;
+}
+
+/* ===== Skill Card Hover Animation ===== */
+.skill-card:hover {
+    transform: translateY(-5px) scale(1.03);
+}
+
+
+/* Typewriter Effect for Hero */
+.typewriter { display: inline-block; overflow: hidden; border-right: 2px solid rgba(255,255,255,0.8); white-space: nowrap; animation: typing 3s steps(30,end), blink-caret 0.7s step-end infinite; }
+@keyframes typing { from { width: 0; } to { width: 100%; } }
+@keyframes blink-caret { 0%,100%{ border-color: transparent; } 50%{ border-color: rgba(255,255,255,0.8); } }
